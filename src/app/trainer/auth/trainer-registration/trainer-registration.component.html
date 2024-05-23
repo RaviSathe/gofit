@@ -1,0 +1,174 @@
+<div class="box">
+    <header>
+        <div class="left">
+          <h1>LOGO</h1>
+        </div>
+        <div class="right">
+          <h5 *ngIf="loginForm">Already Have Account? <button (click)="onLogin()">Login</button></h5>
+          <h5 *ngIf="!loginForm">Don't Have Account? <button (click)="onRegister()">Register</button></h5>
+        </div>
+      </header>
+
+      <div class="form">
+        <div class="left">
+            <h1 style="font-size: 30px;">Hey !</h1>
+            <h4>Register Yourself and be The part of GoFIt .</h4>
+        </div>
+    <div class="login-box" *ngIf="!loginForm">
+        <form [formGroup]="trainerForm">
+            <div class="formNumber" data-aos="flip-up" *ngIf="formNumber == '1'">
+                <div class="user-box">
+                    <input type="text" name="" formControlName="firstName" required="">
+                    <label>First Name</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" name="" formControlName="lastName" required="">
+                    <label>Last Name</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="email" name="" formControlName="email" required="">
+                    <label>Email</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" name="" formControlName="phoneNumber" required="">
+                    <label>Phone Number</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" name="" formControlName="address" required="">
+                    <label>Address</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="date" name="" formControlName="dateOfBirth" required="">
+                    <!-- <label>Date Of Birth</label> -->
+                </div>
+            <button type="button" (click)="onNext()">Next</button>
+            </div>
+          
+            <div class="formNumber" data-aos="flip-up" *ngIf="formNumber == '2'">
+                <div class="radio-input">
+                    <label style="color: white; display: block;">Gender</label>
+                    <input  type="radio" class="input" formControlName="gender" value="male" checked=""> <span style="color: white;">Male</span>
+                    <input  type="radio" class="input" formControlName="gender" value="female"> <span style="color: white;">Female</span>
+                    <input  type="radio" class="input" formControlName="gender" value="other"> <span style="color: white;">Other</span>
+                </div>
+                  <!-- ---type of trainer--------- -->
+                  <div class="user-box">
+                    <select formControlName="trainerType">
+                      <option disabled selected>Type of Trainer</option>
+                      <option *ngFor="let type of trainerTypes" [value]="type">{{ type }}</option>
+                    </select>
+                  </div>
+                  <!-- ---------- -->
+        
+        
+                  <!-- --------specialization------- -->
+                  <div class="checkboxx">
+                    <label style="color: white; margin-bottom: 5px;">What Facilities Your Gym have</label>
+                    <div *ngFor="let choice of specializationList; let i=index" role="group"
+                    aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" [value]="choice.value" (change)="onCheckChange($event)"
+                    [id]="choice.id" autocomplete="off">
+                    <label class="btn btn-outline-primary" [for]="choice.id">{{choice.description}}</label>
+                  </div>
+                  </div>
+                  <!-- --------specialization------- -->
+
+                  <button type="button" (click)="goBack()">Back</button>
+            <button type="button" (click)="onNext()">Next</button>
+            </div>
+
+            <div class="formNumber" data-aos="flip-up" *ngIf="formNumber == '3'">
+                <div class="user-box">
+                    <input type="text" name="" formControlName="certifications" required="">
+                    <label>Certifications</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" name="" formControlName="yearsOfExperience" required="">
+                    <label>Years Of Experience</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" name="" formControlName="availability" required="">
+                    <label>Availability</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" name="" formControlName="preferredLocations" required="">
+                    <label>Preferred Locations</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" name="" formControlName="references" required="">
+                    <label>References</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" name="" formControlName="preferredLocations" required="">
+                    <label>Preferred Locations</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" name="" formControlName="additionalSkills" required="">
+                    <label>Additional Skills</label>
+                  </div>
+
+                  <button type="button" (click)="goBack()">Back</button>
+            <button type="button" (click)="onNext()">Next</button>
+            </div>
+
+
+            <div class="formNumber" data-aos="flip-up" *ngIf="formNumber == '4'">
+                <div class="user-box">
+                    <input type="text" name="" formControlName="photo" required="">
+                    <label>Upload All The Documents</label>
+                </div>
+                <h3>Upload All The Documents</h3>
+                <button type="button" (click)="goBack()">Back</button>
+            <button type="button" (click)="registerTrainer()">Register</button>
+            </div>
+          <!-- <div style="text-align: center;">
+          <a href="#">
+                 SEND
+             <span></span>
+          </a></div> -->
+        </form>
+      </div>
+
+
+      <div class="login-box" *ngIf="loginForm">
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="">
+            <label>Password</label>
+          </div><div style="text-align: center;">
+          <a href="#">
+                 SEND
+             <span></span>
+          </a></div>
+        </form>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</div>

@@ -1,0 +1,95 @@
+<header>
+    <div class="head-left">
+        <h1 style="color: white;">LOGO</h1>
+    </div>
+    <div class="head-right"></div>
+</header>
+<div class="form">
+    <div class="left">
+        <h1 style="font-size: 30px;">Hey !</h1>
+        <h4>Represent Your Gym as Manager .</h4>
+    </div>
+    <div class="login-box">
+        <form [formGroup]="gymManagerForm">
+        <div class="formNumber" data-aos="flip-up" *ngIf="formNumber == '1'">
+                <div class="user-box">
+                    <input type="text" name="" formControlName="firstName" required="">
+                    <label>First Name</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="" formControlName="lastName" required="">
+                    <label>Last Name</label>
+                </div>
+                <div class="user-box">
+                    <input type="email" name="" formControlName="email" required="">
+                    <label>Email</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="" formControlName="phoneNumber" required="">
+                    <label>Phone Number</label>
+                </div>
+                <div class="radio-input">
+                    <label style="color: white; display: block;">Gender</label>
+                    <input  type="radio" class="input" formControlName="gender" value="male" checked=""> <span style="color: white;">Male</span>
+                    <input  type="radio" class="input" formControlName="gender" value="female"> <span style="color: white;">Female</span>
+                    <input  type="radio" class="input" formControlName="gender" value="other"> <span style="color: white;">Other</span>
+                </div>
+                <div class="user-box">
+                    <input type="date" name="" formControlName="dateOfBirth" required="">
+                    <!-- <label>Date Of Birth</label> -->
+                </div>
+                <button type="button" (click)="onNext()">Next</button>
+        </div>
+
+        <div class="formNumber" data-aos="flip-up" *ngIf="formNumber == '2'">
+            <div class="user-box">
+                <input type="text" name="" formControlName="country" required="">
+                <label>Country</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="" formControlName="state" required="">
+                <label>State/Province</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="" formControlName="city" required="">
+                <label>City</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="" formControlName="pinCode" required="">
+                <label>Postal/ZIP Code</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="" formControlName="address" required="">
+                <label>Address</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="" formControlName="landmark" required="">
+                <label>Landmark</label>
+            </div>
+            <button type="button" (click)="goBack()">Back</button>
+            <button type="button" (click)="onNext()">Next</button>
+        </div>
+
+        <div class="formNumber" data-aos="flip-up" *ngIf="formNumber == '3'">
+            <div class="user-box">
+                <input type="text" name="" formControlName="emergencyContactName" required="">
+                <label>Emergency Contact Name</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="" formControlName="emergencyContactNumber" required="">
+                <label>Emergency Contact Number</label>
+            </div>
+            <button type="button" (click)="goBack()">Back</button>
+            <button type="button" (click)="onNext()">Next</button>
+        </div>
+
+        <div class="formNumber" data-aos="flip-up" *ngIf="formNumber == '4'">
+            <h1>Document Upload Section</h1>
+            <button type="button" (click)="goBack()">Back</button>
+            <button type="button" (click)="onSubmit()">Submit</button>
+
+        </div>
+    </form>
+
+    </div>
+</div>
