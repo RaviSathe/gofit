@@ -1,0 +1,199 @@
+.box{
+    background: black;
+    padding: 50px;
+    min-height: 900px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.right .btn-n{
+    // background: #00ffde;
+    background: linear-gradient(to right, black,red);
+    padding: 10px 42px;
+    border-radius: 25px;
+    border: 1px solid white;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.right .btn-n:hover{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    scale: 1.1;
+}
+    .login-box {
+        margin-top: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      padding: 40px;
+      background: rgba(24, 20, 20, 0.987);
+      border: 1px solid red;
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      border-radius: 10px;
+    }
+    
+    .login-box .user-box {
+      position: relative;
+    }
+    
+    .login-box .user-box input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      outline: none;
+      background: transparent;
+    }
+    
+    .login-box .user-box label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      pointer-events: none;
+      transition: .5s;
+    }
+    
+    .login-box .user-box input:focus ~ label,
+    .login-box .user-box input:valid ~ label {
+      top: -20px;
+      left: 0;
+      color: #bdb8b8;
+      font-size: 12px;
+    }
+    
+    .login-box form a {
+      position: relative;
+      display: inline-block;
+      padding: 10px 20px;
+      color: #ffffff;
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: .5s;
+      margin-top: 40px;
+      letter-spacing: 4px
+    }
+    
+    .login-box a:hover {
+      background: #03f40f;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #03f40f,
+                  0 0 25px #03f40f,
+                  0 0 50px #03f40f,
+                  0 0 100px #03f40f;
+    }
+    
+    .login-box a span {
+      position: absolute;
+      display: block;
+    }
+    
+    @keyframes btn-anim1 {
+      0% {
+        left: -100%;
+      }
+    
+      50%,100% {
+        left: 100%;
+      }
+    }
+    
+    .login-box a span:nth-child(1) {
+      bottom: 2px;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #03f40f);
+      animation: btn-anim1 2s linear infinite;
+    }
+  
+  
+    .button {
+      margin: 12px;
+      height: 50px;
+      width: 120px;
+      border-radius: 10px;
+      background: #333;
+      justify-content: center;
+      align-items: center;
+      box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+        inset -5px -5px 10px #222;
+      font-family: "Damion", cursive;
+      cursor: pointer;
+      border: none;
+      font-size: 16px;
+      color: rgb(161, 161, 161);
+      transition: 500ms;
+    }
+    
+    .button:hover {
+      box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+        inset -5px -5px 10px #444;
+      color: #d6d6d6;
+      transition: 500ms;
+    }
+  
+  
+  
+  //  ----gender-----------
+  .input {
+    -webkit-appearance: none;
+   /* remove default */
+    // display: block;
+    margin: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    vertical-align: middle;
+    box-shadow: hsla(0,0%,100%,.15) 0 1px 1px, inset hsla(0,0%,0%,.5) 0 0 0 1px;
+    background-color: hsla(0,0%,0%,.2);
+    background-image: -webkit-radial-gradient( hsla(200,100%,90%,1) 0%, hsla(200,100%,70%,1) 15%, hsla(200,100%,60%,.3) 28%, hsla(200,100%,30%,0) 70% );
+    background-repeat: no-repeat;
+    -webkit-transition: background-position .15s cubic-bezier(.8, 0, 1, 1),
+      -webkit-transform .25s cubic-bezier(.8, 0, 1, 1);
+    outline: none;
+  }
+  
+  .input:checked {
+    -webkit-transition: background-position .2s .15s cubic-bezier(0, 0, .2, 1),
+      -webkit-transform .25s cubic-bezier(0, 0, .2, 1);
+  }
+  
+  .input:active {
+    -webkit-transform: scale(1.5);
+    -webkit-transition: -webkit-transform .1s cubic-bezier(0, 0, .2, 1);
+  }
+  
+  
+  
+  /* The up/down direction logic */
+  
+  .input,
+  .input:active {
+    background-position: 0 24px;
+  }
+  
+  .input:checked {
+    background-position: 0 0;
+  }
+  
+  .input:checked ~ .input,
+  .input:checked ~ .input:active {
+    background-position: 0 -24px;
+  }
+  // -------------------------

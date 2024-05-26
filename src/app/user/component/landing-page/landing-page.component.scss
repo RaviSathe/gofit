@@ -1,0 +1,284 @@
+.box{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/830/928/952/exercising-body-art-bodybuilder-bodybuilding-men-in-black-hd-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+}
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    // background: skyblue;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+header .middle ul li{
+    display:inline-block;
+    font-size: 20px;
+    margin: 5px 30px;
+    color: white;
+    align-items: center;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+header .middle ul li:hover{
+    scale: 1.1;
+    color: red;
+}
+
+.right button{
+    // background: #00ffde;
+    background: linear-gradient(to right, black,red);
+    padding: 10px 42px;
+    border-radius: 25px;
+    border: 1px solid white;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.right button:hover{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    scale: 1.1;
+}
+
+// ------section one-------------
+
+section{
+    display: flex;
+    padding:8% 10%;
+    // background: skyblue;
+}
+
+section .left{
+    width: 50%;
+}
+
+section .left div{
+    font-size: 70px;
+    color: white;
+    font-weight: 600;
+    line-height: 90px;
+}
+
+section .left p{
+    padding: 35px 0;
+    color: grey;
+}
+
+.btn-know-more{
+    background: transparent;
+    padding: 10px 30px;
+    border: 1px solid red;
+    color: red;
+    font-weight: 700;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn-know-more:hover{
+    background: white;
+    scale: 1.1;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+section .left .total{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 50px;
+    align-items: center;
+}
+
+section .left .total span{
+    font-size: 30px;
+}
+
+.count span{
+    color: red;
+}
+
+section .left .total .name{
+    font-size: 20px;
+}
+hr{
+  background: white;
+  width: 4px;
+    height: 50px;
+}
+
+.total .count{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+section.right{
+    width: 50%;
+}
+
+// ----------------
+
+// ------box2-------------
+.box2{
+    background: #272727;
+    min-height: 200px;
+    width: 100%;
+    padding: 50px 30px;
+}
+
+.box2 .headingTag{
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    font-weight: 700;
+}
+
+.box2 p{
+    width: 30%;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+.box2 .info-card{
+    display: flex;
+    width: 90%;
+    margin:60px auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+
+.box2 .info-card .card{
+    width: 48%;
+    height: 250px;
+    border: 2px solid red;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.box2 .info-card .card:hover{
+    box-shadow: 0 0 10px 0 red;
+}
+
+.square{
+    height: 20px;
+    width: 20px;
+    background: red;
+    border-radius: 2px;
+}
+
+.info-card .card .question{
+    color: red;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+// -------------------
+
+// ------box 3--------------------
+
+.box3{
+    padding:100px 70px;
+    display: flex;
+    margin: auto;
+    background: black;
+}
+
+.box3 .left{
+    width: 60%;
+    // background: skyblue;
+}
+
+.box3 .right{
+    width: 40%;
+    // background: lightcoral;
+}
+
+.box3 .left div{
+    font-size: 90px;
+    line-height: 80px;
+    font-weight: 600;
+}
+
+.box3 .left p{
+    color: white;
+    margin: 20px 0 40px 0;
+    width: 80%;
+}
+
+// ---------------------------
+
+// -----box4---------------
+
+.box4{
+    background: #272727;
+    min-height: 200px;
+    width: 100%;
+    padding: 50px 30px;
+}
+
+.box4 .heading{
+    font-size: 90px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.box4 p{
+     color: white;
+     text-align: center;
+     width: 40%;
+     margin: auto;
+}
+.box4 .trainer-card{
+    display: flex;
+    width: 90%;
+    margin:50px auto;
+    justify-content: space-evenly;
+}
+
+.box4 .trainer-card .card{
+    width: 30%;
+    height: 600px;
+    border: 1px solid white;
+    background: transparent;
+    position: relative;
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/724/88/desktop-wallpaper-sangram-chougule-indian-bodybuilder-thumbnail.jpg');
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.trainer-card .card .info{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 400px;
+    background: rgb(0 0 0 / 85%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+ 
+.rating span{
+    margin: 0 5 px;
+}
+
+.checked {
+    color: orange;
+  }
+
+.trainer-card .card:hover{
+    box-shadow: 0 0 15px 0 red;
+}
