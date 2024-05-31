@@ -4,11 +4,16 @@ import { LandingPageComponent } from './user/component/landing-page/landing-page
 import { DashboardComponent } from './user/component/dashboard/dashboard.component';
 import { HomeComponent } from './user/component/home/home.component';
 import { LoginRegistrationComponent } from './user/auth/login-registration/login-registration.component';
+import { GymsComponent } from './user/tabs/gyms/gyms.component';
+import { TrainerComponent } from './user/tabs/trainer/trainer.component';
 
 const routes: Routes = [
   {path:'', component:LandingPageComponent, title:'GoFit'},
   {path:'login-register',component:LoginRegistrationComponent,title:'Login Registration'},
   {path:'dashboard',component:DashboardComponent,title:'Dashboard'},
+  {path:'home',component:HomeComponent,title:'home'},
+  {path:'gym-member',component:GymsComponent,title:'GYM'},
+  {path:'trainer-member',component:TrainerComponent,title:'TRAINER'},
   {path:'home',component:HomeComponent,title:'home'},
   { path: '', loadChildren: () => import('./trainer/trainer.module').then(m => m.TrainerModule) }, 
   { path: 'gym', loadChildren: () => import('./gym/gym.module').then(m => m.GymModule) },

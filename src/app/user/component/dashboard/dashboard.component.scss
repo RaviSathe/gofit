@@ -1,13 +1,14 @@
 // ----------header---------------
 header{
-  background: black;
+  background: white;
   // z-index: 2;
+  color: black;
   // width: 100%;
   // position: fixed;
 }
 .box1{
   width: 90%;
-  color: white;
+  color: black;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -39,7 +40,7 @@ header{
 }
 
 .right hr{
-  color: white;
+  color: black;
   // background: red;
   width: 35px;
   rotate: 90deg;
@@ -70,7 +71,7 @@ header{
   padding: 10px;
   font-size: 16px;
   border: none;
-  color: white;
+  color: black;
   transition: 0.3s;
 }
 

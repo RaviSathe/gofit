@@ -1,5 +1,6 @@
 .box{
-    background: grey;
+    background: white;
+    color: black;
     width: 100%;
     // min-height: 1000px;
     // height: 100vh;
@@ -13,19 +14,19 @@
 }
 
 .gym-cards .left{
-    width: 58%;
-    height: 550px;
+    width: 56%;
+    height: 540px;
     // background: red;
     // border: 2px solid red;
-    border-radius: 10px;
+    // border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
 }
 
 .gym-cards .left .banner-img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    // object-fit: cover;
+    // border-radius: 10px;
 }
 
 .gym-cards .right .all-images{
@@ -33,6 +34,7 @@
     width: 100%; /* Adjust the width as needed */
     overflow-x: auto;
     border-radius: 10px;
+    overflow-y: hidden;
 }
 
 .gym-cards .right .all-images .scrollable-content {
@@ -43,8 +45,8 @@
 
 .gym-cards .right .all-images .other-img{
     display: inline-block;
-    width: 180px;
-    height: 130px;
+    width: 160px;
+    height: 120px;
     margin-right: 15px; /* Add spacing between items */
 }
 
@@ -58,19 +60,19 @@
 }
 
 .gym-cards .right .all-images .other-img img:hover{
-    box-shadow: 0 0 10px 2px red;
+    // box-shadow: 0 0 10px 2px red;
     scale: 1.1;
 }
 
-.gym-cards .right{
-    width: 42%;
+  .gym-cards .right{
+    // padding:0 20px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
     height: 550px;
-    // border:2px solid green;
-}
-
-.gym-cards .right{
-    padding:0 20px;
+    padding: 0 0 10px 20px;
     display: flex;
+    width: 44%;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -78,14 +80,15 @@
 .gym-cards .right .gym-info{
     font-size: 20px;
     font-weight: 600;
-}
-
-// .gym-cards .right .gym-info .tag{
-//     color: red;
-// }
-
-.gym-cards .right .gym-info .tag span{
-    color: white;
+  }
+  
+  // .gym-cards .right .gym-info .tag{
+    //     color: red;
+    // }
+    
+    .gym-cards .right .gym-info .tag span{
+      // color: white;
+      color: black;
 }
 
 // .gym-cards .right .offer{
@@ -103,80 +106,6 @@
 
 
 
-.gym-trainers{
-    // background: #616161;
-    background: black;
-    // border-radius: 10px;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
-    width: 90%;
-    margin: 20px auto 20px auto;
-    // padding: 20px 0;
-    height: 500px;
-}
-
-.flip-card {
-    background-color: transparent;
-    width: 270px;
-    height: 380px;
-    perspective: 1000px;
-    font-family: sans-serif;
-    margin: 0 20px;
-    cursor: pointer;
-  }
-  
-  .title {
-    font-size: 1.5em;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    // border: 1px solid coral;
-    border-radius: 5px;
-  }
-  
-  .flip-card-front {
-    background: url("https://e1.pxfuel.com/desktop-wallpaper/724/88/desktop-wallpaper-sangram-chougule-indian-bodybuilder-thumbnail.jpg");
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    background-position: top;
-  }
-  
-  .flip-card-back {
-    transform: rotateY(180deg);
-    background: white;
-  }
-
-  .gym-trainers .head-title{
-    text-align: center;
-    font-size: 70px;
-    font-weight: 600;
-  }
-
 //   ---------------membership--------------
 
 .membership{
@@ -189,10 +118,12 @@
 }
 
 .membership .membership-plan{
-    background: green;
+    background: white;
     width: 65%;
     height: 100%;
     padding: 10px;
+    // border-radius: 10px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .membership .membership-plan .headline{
@@ -201,55 +132,33 @@
 
 }
 
-.membership .book-free-trial .box{
-    width: 80%;
-    height: 300px;
-    background: linear-gradient(to right, white,red);
-    margin: 20px auto;
-    border-radius: 10px;
-    position: relative;
+.membership .membership-plan .plan{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
 }
 
-.sub{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.plan .name-of-plan{
+  width: 70%;
+  font-size: 25px;
+  font-weight: 500;
 }
 
-.membership .book-free-trial .second button{
-    padding: 10px 30px;
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    border-radius: 20px;
-    font-weight: 800;
-    transition: 0.3s;
-    cursor: pointer;
+.plan .price{
+  width: 30%;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
 }
 
-.membership .book-free-trial .second{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-}
-
-.membership .book-free-trial .second button:hover{
-    background: white;
-    scale: 1.1;
-    color: black;
-    border: 1px solid black;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+.membership .offer{
+  width: 32%;
+  background: white;
+  box-shadow: 0 0 10px 0px rgba(0,0,0,0.2);
 }
 
 hr{
     margin: 5px 0;
-}
-
-.membership .book-free-trial{
-    // background: blue;
-    width: 35%;
-    height: 100%;
 }
 
 .tooltip-container {
@@ -295,5 +204,215 @@ hr{
     pointer-events: auto;
   }
   
+
+// -------------------------------
+
+// -------------basic-other-info--------------
+
+.basic-other-info{
+  display: flex;
+  height: 400px;
+  width: 90%;
+  margin: 10px auto;
+  // border-radius: 10px;
+  justify-content: space-between;
+}
+
+.basic-other-info .amenities{
+  width: 68%;
+  background: white;
+  // border-radius: 10px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.basic-other-info .book-free-trial{
+  // background: blue;
+  // margin: auto;
+  width: 30%;
+  height: 100%;
+}
+
+.basic-other-info .book-free-trial .second button{
+  padding: 10px 30px;
+  background: transparent;
+  border: 2px solid skyblue;
+  color: grey;
+  border-radius: 20px;
+  font-weight: 800;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.basic-other-info .book-free-trial .second{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.basic-other-info .book-free-trial .second button:hover{
+  background: white;
+  scale: 1.1;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+}
+
+.basic-other-info .book-free-trial .box{
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  background: grey;
+  // margin: 0 auto 20px auto;
+  // border-radius: 10px;
+  position: relative;
+  font-size: 20px;
+}
+
+.sub{
+  text-align: center;
+  align-items: center;
+}
+
+.sub button{
+  padding: 10px 20px;
+  color: gold;
+  background: white;
+  border: 1px solid gold;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.sub button:hover{
+scale: 1.1;
+box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+}
+
+
+
+// ----------------------------------
+
+
+// -----trainer-list------------
+
+
+.gym-trainers{
+  // background: #616161;
+  // background: grey;
+  // border-radius: 10px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin: 20px auto 20px auto;
+  // padding: 20px 0;
+  height: 500px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 270px;
+  height: 380px;
+  perspective: 1000px;
+  font-family: sans-serif;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  // border: 1px solid coral;
+  border-radius: 5px;
+}
+
+.flip-card-front {
+  background: url("https://e1.pxfuel.com/desktop-wallpaper/724/88/desktop-wallpaper-sangram-chougule-indian-bodybuilder-thumbnail.jpg");
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background-position: top;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background: white;
+}
+
+.gym-trainers .head-title{
+  text-align: center;
+  font-size: 70px;
+  font-weight: 600;
+  // color: white;
+}
+
+.trainer-list{
+  display: flex;
+}
+
+// -------------------
+
+
+// ----------about-gym---------------
+
+.about-gym{
+  width: 90%;
+  height: 300px;
+  background: white;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+
+
+// -------------------------------
+
+
+// -------comments-and-map-----------------
+
+.comments-and-map{
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+  width: 90%;
+  margin: auto;
+}
+
+.comment-section{
+  width: 60%;
+  // background: black;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.map{
+  width: 35%;
+  // background: black;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+
 
 // -------------------------------
