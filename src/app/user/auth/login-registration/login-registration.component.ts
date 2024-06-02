@@ -18,8 +18,11 @@ export class LoginRegistrationComponent {
     this.createForm(); // Call the method to create the form
   }
   ngOnInit() {
-    let num = localStorage.getItem('formNumber')
     if(localStorage.getItem('formNumber')){
+      let num:any = localStorage.getItem('formNumber')
+      if(num > 4){
+        num = 1
+      }
       this.formNumber = num
     }else{
       this.formNumber = '1'
@@ -73,13 +76,17 @@ export class LoginRegistrationComponent {
     }
   }
 
-  onSubmit() {
+  registerUser() {
     console.log(this.userRegistrationForm.value);
     alert("hey")
-    this._router.navigate(['/dashboard'])
+    this.login_part = false
     
   }
 
+  loginUserBtn(){
+    this._router.navigate(['/dashboard'])
+  }
+  
   login(){
     this.login_part = !this.login_part
   }

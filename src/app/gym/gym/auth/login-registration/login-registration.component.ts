@@ -115,7 +115,12 @@ export class LoginRegistrationComponent implements OnInit {
 
   register() {
     console.log(this.registrationForm.value);
-    this._router.navigate(['gym/home'])
+    this.loginForm = false
+  }
+  
+  gymLoginBtn(){
+    this._router.navigate(['/g-home'])
+
   }
 
 }

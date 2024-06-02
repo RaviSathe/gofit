@@ -11,7 +11,7 @@ const routes: Routes = [
     {path: 'manager-registration', component: RegistrationComponent, title: "Manager Registration" },
     {path: 'gym-registration' , component: LoginRegistrationComponent , title: "Gym"},
     {path: '' , component: DashboardComponent , title: "Dashboard", children:[
-      {path: 'home' , component: HomeComponent , title: "Home"},
+      {path: 'g-home' , component: HomeComponent , title: "Home"},
     ]},
     
   ]},

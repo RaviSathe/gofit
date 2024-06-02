@@ -1,5 +1,8 @@
 .box{
-    background: black;
+    background: url('https://st.depositphotos.com/3383955/54761/i/450/depositphotos_547613802-stock-photo-muscular-man-showing-back-muscles.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
     padding: 50px;
     min-height: 900px;
 }
@@ -47,6 +50,7 @@ header{
       padding: 10px 0;
       font-size: 16px;
       color: #fff;
+      // color: black;
       margin-bottom: 30px;
       border: none;
       border-bottom: 1px solid #fff;
@@ -61,6 +65,7 @@ header{
       padding: 10px 0;
       font-size: 16px;
       color: #fff;
+      // color: black;
       pointer-events: none;
       transition: .5s;
     }
@@ -70,6 +75,7 @@ header{
       top: -20px;
       left: 0;
       color: #bdb8b8;
+      // color: black;
       font-size: 12px;
     }
     
@@ -78,6 +84,7 @@ header{
       display: inline-block;
       padding: 10px 20px;
       color: #ffffff;
+      // color: black;
       font-size: 16px;
       text-decoration: none;
       text-transform: uppercase;
@@ -90,6 +97,7 @@ header{
     .login-box a:hover {
       background: #03f40f;
       color: #fff;
+      // color: black;
       border-radius: 5px;
       box-shadow: 0 0 5px #03f40f,
                   0 0 25px #03f40f,

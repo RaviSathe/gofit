@@ -24,19 +24,30 @@ header{
 
 .left .logo{
   margin: 0 20px 0 10px;
+  cursor: pointer;
 }
 
 .searchBar{
   width: 400px;
+  display: flex;
 }
 
 .searchBar input{
   padding: 2% 5%;
   width: 100%;
   font-size: 20px;
+  margin-right: 5px;
   border: none;
   border-radius: 30px;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.searchBar button{
+  padding: 5px 10px;
+  border-radius: 25px;
+  background: transparent;
+  color: grey;
+  border: 2px solid black;
 }
 
 .right hr{
@@ -69,10 +80,12 @@ header{
 .dropbtn {
   background: transparent;
   padding: 10px;
-  font-size: 16px;
+  font-size: 20px;
   border: none;
   color: black;
   transition: 0.3s;
+  // font-weight: 500;
+  // border: 1px solid black;
 }
 
 .dropdown {
@@ -110,7 +123,7 @@ color: red;}
   .dropdown:hover .dropbtn {
     color:red ;
   scale: 1.1;
-  // font-size: 20px;
+  // border: none;
 }
 
 //   ------language--------
@@ -231,11 +244,33 @@ color: red;}
 
 .box2{
   display: flex;
-  padding: 10px 70px 0 70px;
+  padding: 0 70px;
   justify-content: space-between;
-  margin: 5px auto 0 auto;
+  margin:auto;
   // box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 6px 0 white;
+}
+
+.box2 .left{
+  display: flex;
+}
+
+.box2 .left div{
+  border: 1px solid black;
+    padding: 12px 7px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box2 .left div:active{
+  transform: scale(.9);
+}
+
+.box2 .left div:hover{
+  scale: 1.1;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 }
 
 .dropdown-content-box2 {
@@ -261,3 +296,58 @@ color: red;}
 // --------------header ends------------
 
 
+// --------responsive------------
+@media(max-width:1200px){
+  .box1 h1{
+      font-size: 22px;
+    }
+    
+  .searchBar{
+    width: 250px;
+  }
+    .box1{
+    flex-direction: row;
+    margin: 0 15px;
+    justify-content: space-between;
+    margin: auto;
+    width: 98%;
+  }
+
+  .box1 .left{
+    // width: 25%;
+  }
+
+  .box1 .right{
+    font-size: 15px;
+    justify-content: right;
+    width: 80%;
+  }
+}
+
+@media(max-width:975px){
+  .box1 .right span{
+    font-size: 14px;
+  }
+}
+
+@media(max-width:855px){
+  .box1{
+    flex-direction: column;
+  }
+
+  .box1 .left .searchBar{
+    width: 100%;
+  }
+
+  .box1 .left{
+    width: 100%;
+  }
+  .box1 .right{
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .searchBar input{
+    padding: 1% 2%;
+  }
+}

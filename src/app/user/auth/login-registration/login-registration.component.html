@@ -1,7 +1,7 @@
 <div class="box">
     <header>
-        <div class="left"><h1>Go<span style="color: red;">Fit</span></h1></div>
-        <div class="middle"><h1>Welcome To Go<span style="color: red;">Fit</span></h1></div>
+        <div class="left"><h1 style="color: white;">Go<span style="color: red;">Fit</span></h1></div>
+        <div class="middle"><h1 style="color: white;">Welcome To Go<span style="color: red;">Fit</span></h1></div>
         <div class="right">
             <button class="btn-n" *ngIf="login_part" (click)="login()">Login</button>
             <button class="btn-n" *ngIf="!login_part" (click)="login()">Register</button>
@@ -84,7 +84,7 @@
         <div class="formNumber" data-aos="flip-up" *ngIf="formNumber == '4'">
             <h1>Document Upload Section</h1>
             <button type="button" class="button" (click)="goBack()">Back</button>
-            <button type="button" class="button" (click)="onSubmit()">Submit</button>
+            <button type="button" class="button" (click)="registerUser()">Submit</button>
     
         </div>
     </form>
@@ -105,7 +105,7 @@
               <label>Password</label>
             </div>
             <div style="text-align: center;">
-              <a>
+              <a (click)="loginUserBtn()">
                 Login
                 <span></span>
               </a>

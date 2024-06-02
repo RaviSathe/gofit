@@ -15,6 +15,8 @@ import { HomeComponent } from './user/component/home/home.component';
 import { GymsComponent } from './user/tabs/gyms/gyms.component';
 import { TrainerComponent } from './user/tabs/trainer/trainer.component';
 import { GymPreviewComponent } from './user/view-page/gym-preview/gym-preview.component';
+import { TrainerPreviewComponent } from './user/view-page/trainer-preview/trainer-preview.component';
+import { RegisterVendorComponent } from './vendor/auth/register-vendor/register-vendor.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { GymPreviewComponent } from './user/view-page/gym-preview/gym-preview.co
     HomeComponent,
     GymsComponent,
     TrainerComponent,
-    GymPreviewComponent
+    GymPreviewComponent,
+    TrainerPreviewComponent,
+    RegisterVendorComponent,
   ],
   imports: [
     BrowserModule,

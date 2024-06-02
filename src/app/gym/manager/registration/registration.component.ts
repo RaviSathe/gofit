@@ -79,7 +79,7 @@ export class RegistrationComponent implements OnInit {
     // alert("Registration successful")
     console.log(this.gymManagerForm.value);
     alert("hey")
-    this._router.navigate(['gym/gym-registration'])
+    this._router.navigate(['/gym-registration'])
     
   }
 

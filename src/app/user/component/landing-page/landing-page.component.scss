@@ -28,12 +28,12 @@ header .middle ul li{
 
 header .middle ul li:hover{
     scale: 1.1;
-    color: red;
+    color: skyblue;
 }
 
 .right button{
     // background: #00ffde;
-    background: linear-gradient(to right, black,red);
+    background: linear-gradient(to right, black,skyblue);
     padding: 10px 42px;
     border-radius: 25px;
     border: 1px solid white;
@@ -74,8 +74,8 @@ section .left p{
 .btn-know-more{
     background: transparent;
     padding: 10px 30px;
-    border: 1px solid red;
-    color: red;
+    border: 1px solid skyblue;
+    color: skyblue;
     font-weight: 700;
     border-radius: 25px;
     transition: 0.3s;
@@ -100,7 +100,7 @@ section .left .total span{
 }
 
 .count span{
-    color: red;
+    color: skyblue;
 }
 
 section .left .total .name{
@@ -157,7 +157,7 @@ section.right{
 .box2 .info-card .card{
     width: 48%;
     height: 250px;
-    border: 2px solid red;
+    border: 2px solid skyblue;
     border-radius: 10px;
     background: transparent;
     cursor: pointer;
@@ -165,7 +165,7 @@ section.right{
 }
 
 .box2 .info-card .card:hover{
-    box-shadow: 0 0 10px 0 red;
+    box-shadow: 0 0 10px 0 skyblue;
 }
 
 .square{

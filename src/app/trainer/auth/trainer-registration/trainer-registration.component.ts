@@ -106,7 +106,7 @@ export class TrainerRegistrationComponent implements OnInit {
 
   registerTrainer() {
     console.log(this.trainerForm.value);
-    this._router.navigate(['./dashboard'])
+    this._router.navigate(['./t-dashboard'])
     // You can submit the form data to your backend or perform other actions here
   }
 }
